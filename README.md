@@ -12,11 +12,11 @@
 - Link :  https://expo.dev/@haillie/projects/CheckYourList
 - or open this Link on your device : exp://exp.host/@haillie/CheckYourList?release-channel=default
 - AR code:
-    ![qrcode](asstes/qrcode-checkyourlist.svg)
-    ![demo-img](asstes/demo.gif)
+    ![qrcode-checkyourlist](asstes/qrcode-checkyourlist.svg)
+    ![demo](asstes/demo.gif)
 
     - Basic screen
-        ![screen-plain](img/screen-splash) ![screen-plain](img/screen-plain)
+        ![screen-plain](img/screen-splash.png) ![screen-plain](img/screen-plain.png)
 
 ## Features
 
