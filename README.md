@@ -1,6 +1,7 @@
 # React project - Check your list
 
-![logo](assets/icon-checkyourlist.png)
+<!-- ![logo](assets/icon-checkyourlist.png) -->
+<img src="/assets/icon-checkyourlist.png" width="30%" height="30%"/>
 
 ## Used skills
 
