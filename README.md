@@ -10,7 +10,10 @@
 
 
 ## How to run?
-    $ expo run
+- Download Expo or Expo Go app, and run the command below:
+
+
+        $ expo run
            
 
 
