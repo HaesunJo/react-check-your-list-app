@@ -39,15 +39,3 @@
     <img src="/img/screen-data-clear.PNG" width="20%" height="20%"/>
 
 
-## Features
-
-- Authentication with Firebase
-    - Login
-    ```javascript
-    <div
-        className="login-button google"
-        onClick={() => auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())}
-    >
-        <GoogleOutlined /> Sign In with Google
-    </div>
-    ```
