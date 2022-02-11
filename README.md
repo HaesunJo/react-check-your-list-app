@@ -9,6 +9,12 @@
 - Expo Go
 
 
+## How to run?
+    $ expo run
+           
+
+
+
 ## Demo
 - Link :  https://expo.dev/@haillie/projects/CheckYourList
 - or open this Link on your device : exp://exp.host/@haillie/CheckYourList?release-channel=default
