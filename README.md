@@ -13,7 +13,7 @@
 - Download Expo or Expo Go app, and run the command below:
 
 
-        $ expo run
+        $ expo start
            
 
 
