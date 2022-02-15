@@ -17,6 +17,14 @@
            
 
 
+## What I learn from this project
+- How to create the app with [React Native](https://reactnative.dev/) and [Expo](https://docs.expo.dev/).
+- Building knowledges about React Native and Expo.
+- How to use Async storage for keeping the String data that user added.
+- Build Create, Read, Update and Delete functions.
+
+
+
 
 ## Demo
 - Link :  https://expo.dev/@haillie/projects/CheckYourList
