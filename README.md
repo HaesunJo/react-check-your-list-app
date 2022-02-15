@@ -56,3 +56,36 @@
     <img src="/img/screen-data-clear.PNG" width="25%" height="25%"/>
 
 
+
+
+## Features
+
+- Delete individual list
+
+
+```javascript
+  const deleteTask = async (key) => {
+     Alert.alert("Delete a Task", "Do you want to delete it?", [
+        { text: "Cancel" },
+        {
+          text: "I do",
+          style: "destructive",
+          onPress: () => {
+            const newTasks = { ...tasks };
+            delete newTasks[key];
+            setTasks(newTasks);
+            saveTasks(newTasks);
+          },
+        },
+     ]);
+  }
+```
+
+- Empty Async storage(delete all data)
+
+```javascript
+  const clearData = async () => {
+    AsyncStorage.clear();
+    alert("You won't see list when you restart the app!");
+  }
+```
