@@ -24,7 +24,18 @@
 - Build Create, Read, Update and Delete functions.
 
 
+## Challenge part
+- Make the app remember where the last page is when the user closes. If user terminate the app on 'Travel' page, the app shows 'Travel' page when user reopen the app.
 
+   Set the state in useState for the 'Daily' view as true and set useEffect to pass the value of useState(true). This app starts with 'true' at first, and when the user closes the app on the 'Travel' view, 'true' will be 'false'. This 'false' value will be stored in useState. 
+
+   ```javascript
+        const [daily, setDaily] = useState(true);
+
+        useEffect(() => {
+          console.log("daily or what", daily); 
+          }, [daily]);
+   ```
 
 ## Demo
 - Link :  https://expo.dev/@haillie/projects/CheckYourList

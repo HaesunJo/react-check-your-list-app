@@ -20,7 +20,9 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    console.log("daily or what", daily);
+    // useState of daily has 'true' at the beginning, 
+    // if the user close the app on 'Travel' view, useState pass the value as false.
+    console.log("daily or what", daily); 
   }, [daily]);
 
   // const complete = () => setCompleted(false);
@@ -152,12 +154,15 @@ export default function App() {
               <TouchableOpacity onPress={() => completedTask(key, "completed", !tasks[key].completed)}>
                 {tasks[key].completed === completed ? (
                   <Fontisto name="checkbox-active" size={18} color={theme.grey} />
-                ): (
-                <Fontisto name="checkbox-passive" size={18} color={theme.grey} />
+                ) : (
+                  <Fontisto name="checkbox-passive" size={18} color={theme.grey} />
                 )}
               </TouchableOpacity>
+
               {edit != key && (
-                <Text style={{ ...styles.listText, color: tasks[key].completed === false ? "white" : theme.grey, textDecorationLine: tasks[key].completed === false ? "none" : "line-through"}}>{tasks[key].userInput}</Text>
+                <Text style={{ ...styles.listText, 
+                  color: tasks[key].completed === false ? "white" : theme.grey, 
+                  textDecorationLine: tasks[key].completed === false ? "none" : "line-through"}}>{tasks[key].userInput}</Text>
               )}
 
               {edit == key && (
@@ -196,62 +201,64 @@ export default function App() {
         ) : null
         ))}
       </ScrollView>
+
       <View>
       <TouchableOpacity onPress={clearData}>
         <Text style={{ color: "#8EAEED", marginBottom: 25 }}>If you want to reset your data, click here.</Text>
       </TouchableOpacity>
       </View>
+
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#000',
-    paddingHorizontal: 20, 
+    flex             : 1,
+    backgroundColor  : '#000',
+    paddingHorizontal: 20,
   },
   header: {
     justifyContent: "space-between",
-    flexDirection: "row",
-    marginTop: 100,
+    flexDirection : "row",
+    marginTop     : 100,
   },
   btnsText: {
-    fontSize: 30,
+    fontSize  : 30,
     fontWeight: "500",
   },
   input: {
-    fontSize: 16,
-    borderRadius: 30,
-    paddingVertical: 15,
+    fontSize         : 16,
+    borderRadius     : 30,
+    paddingVertical  : 15,
     paddingHorizontal: 20,
-    backgroundColor: "#fff",
-    marginVertical: 15,
+    backgroundColor  : "#fff",
+    marginVertical   : 15,
   },
   list: {
-    backgroundColor: theme.listBg,
-    marginBottom: 10,
-    paddingVertical: 20,
+    backgroundColor  : theme.listBg,
+    marginBottom     : 10,
+    paddingVertical  : 20,
     paddingHorizontal: 30,
-    borderRadius: 15,
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
+    borderRadius     : 15,
+    flexDirection    : "row",
+    alignItems       : "center",
+    justifyContent   : "space-between",
   },
   listText: {
-    color: "#fff",
-    fontSize: 18,
-    fontWeight: "400",
+    color            : "#fff",
+    fontSize         : 18,
+    fontWeight       : "400",
     paddingHorizontal: 20,
   },
   rightColumn:{
-    flexDirection: "row",
-    alignItems: "center",
+    flexDirection : "row",
+    alignItems    : "center",
     justifyContent: "space-between"
   },
   editTask: {
-    color: "#8EAEED",
-    fontSize: 18,
+    color     : "#8EAEED",
+    fontSize  : 18,
     fontWeight: "400"
   }
 
